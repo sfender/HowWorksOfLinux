@@ -13,6 +13,10 @@ RUN apt-get update \
     #
     # Verify git, process tools, lsb-release (common in install instructions for CLIs) installed
     && apt-get -y install git procps lsb-release \
+    && apt-get update \
+    && apt-get -y install build-essential sysstat binutils \
+    && apt-get -y install gcc \
+    && apt-get -y install strace \
 
     # Clean up
     && apt-get autoremove -y \

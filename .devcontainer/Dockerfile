@@ -23,8 +23,9 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/* 
 
-# install libraries for linuxの仕組み    
-# RUN apt-get install build-essential sysstat
+# COPY .gitconfig fle
+COPY ~/.gitconfig /workdpace/HowWoksOfLinux/
+
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog

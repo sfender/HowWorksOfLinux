@@ -52,8 +52,8 @@ static void child_fun(int id, struct timespec *buf, int nrecord, unsigned long n
     for ( i = 0; i < nrecord; i++)
     {
         printf("%d\t%ld\t%d\n", id, diff_nsec(start, buf[i]) / NSECS_PER_MSEC, (i + 1) * 100 / nrecord);
-        exit(EXIT_SUCCESS);
     }
+        exit(EXIT_SUCCESS);
 }
 
 static void parent_fn(int nproc)

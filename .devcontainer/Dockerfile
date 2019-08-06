@@ -17,6 +17,7 @@ RUN apt-get update \
     && apt-get -y install build-essential sysstat binutils \
     && apt-get -y install gcc \
     && apt-get -y install strace \
+    && apt-get -y install gnuplot \
 
     # Clean up
     && apt-get autoremove -y \
@@ -24,7 +25,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* 
 
 # COPY .gitconfig from local host
-COPY ~/.gitconfig ./
+# COPY ~/.gitconfig ./
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog

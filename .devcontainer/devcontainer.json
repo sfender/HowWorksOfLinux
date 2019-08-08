@@ -12,7 +12,6 @@
 		"python.linting.pylintPath": "/usr/local/bin/pylint",
 		"python.linting.enabled": true
 	},
-	"postCreateCommand": "sudo pip install -r requirements.txt",
 	
 	// Uncomment the next line if you will use a ptrace-based debugger like C++, Go, and Rust.
 	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
@@ -21,7 +20,10 @@
 	"runArgs": [ "-v", "${env:HOME}${env:USERPROFILE}/.ssh:/root/.ssh-localhost:ro" ],
 
 	// Copy the contents to the correct location and set permissions
-	"postCreateCommand": "mkdir -p ~/.ssh && cp -r ~/.ssh-localhost/* ~/.ssh && chmod 700 ~/.ssh && chmod 600 ~/.ssh/*"
+	"postCreateCommand": "mkdir -p ~/.ssh && cp -r ~/.ssh-localhost/* ~/.ssh && chmod 700 ~/.ssh && chmod 600 ~/.ssh/*",\
+
+	// install requierments python libraries
+	"postCreateCommand": "pip install -r requirements.txt"
 
 	// Uncomment the next line if you want to publish any ports.
 	// "appPort": [],
@@ -32,6 +34,4 @@
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
 
-	// Add the IDs of any extensions you want installed in the array below.
-	"extensions": []
 }

@@ -17,6 +17,6 @@
 
 `time taskset -c 0 ./shvced_nice 2 10 1`
 
-###　グラフ作成用
+### グラフ作成用
 
 `python plot.py --filename ファイル名`

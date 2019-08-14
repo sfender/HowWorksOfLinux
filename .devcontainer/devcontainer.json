@@ -6,7 +6,8 @@
 	"extensions": [
 		"ms-python.python",
 		"lfs.vscode-emacs-friendly",
-		"ms-vscode.cpptools"
+		"ms-vscode.cpptools",
+		"visualstudioexptteam.vscodeintellicode"
 	],
 	"settings": {
 		"python.pythonPath": "/usr/local/bin/python",

@@ -7,8 +7,12 @@
 
 ### 大体のコマンド
 
+`cc -o sched sched.c`
+
 `taskset -c 0,3 ./shced 2 100 1`
+
 `taskset -c 0 ./shced 1 10000 10000`
+
 `time taskset -c 0 ./shced 1 10000 10000`
 
 `time taskset -c 0 ./shvced_nice 2 10 1`

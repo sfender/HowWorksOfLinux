@@ -20,3 +20,19 @@
 ### グラフ作成用
 
 `python plot.py --filename ファイル名`
+
+## chapter5
+
+### スワップ領域の確認
+
+`swapon --show`
+
+### スワップの監視
+
+`sar -W 1`
+
+
+### スワッシングの監視
+
+`sar -S 1`
+

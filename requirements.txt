@@ -1,4 +1,4 @@
 matplotlib
 pandas
-'holoviews[recommended]'
+holoviews[recommended]
 argparse

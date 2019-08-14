@@ -4,7 +4,11 @@
 	"dockerFile": "Dockerfile",
 	"appPort": 9000,
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		"lfs.vscode-emacs-friendly",
+		"ms-vscode.cpptools",
+		"visualstudioexptteam.vscodeintellicode",
+		"shakram02.bash-beautify"
 	],
 	"settings": {
 		"python.pythonPath": "/usr/local/bin/python",

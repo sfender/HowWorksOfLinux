@@ -71,3 +71,13 @@ dockerの権限周りの問題らしい。ここは実験を諦めて、読む�
     - https://stackoverflow.com/questions/21014080/dd-fail-to-write-to-tmpfs
     - https://qiita.com/toshihirock/items/e2d187e91ee5446c7a69
     - https://unix.stackexchange.com/questions/209244/which-linux-capability-do-i-need-in-order-to-write-to-proc-sys-vm-drop-caches
+
+## chapter7
+
+コードなし
+
+## chapter8
+
+io.cは未使用のパーティションを用意する必要あり。
+
+めんどうなので読むだけにした。

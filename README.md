@@ -3,6 +3,10 @@
 - vscodeでのgitの操作方法確認
 - vscode remote containerの練習
 
+## 環境
+
+vscode remote containerを利用しているので、`.deccontainer`を参照。
+
 ## chapter4
 
 ### 大体のコマンド
